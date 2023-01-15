@@ -5,7 +5,7 @@
 }
 
 .header__nav-wrapper {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     @include centeringFlexbox($just-cont: space-between);
   }
 }
