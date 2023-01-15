@@ -3,14 +3,14 @@
   @extend %list;
 
   display: none;
-  margin-left: auto;
-
-  .header-contacts__item:not(:last-child) {
-    margin-right: 30px;
-  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin-left: auto;
+
+    .header-contacts__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
