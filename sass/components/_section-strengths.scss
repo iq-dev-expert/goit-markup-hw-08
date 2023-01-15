@@ -1,0 +1,74 @@
+.strengths {
+    @extend %list;
+
+    .strengths__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.strengths__icon-wrap {
+    @include centeringFlexbox();
+
+    margin-bottom: 30px;
+    height: 120px;
+
+    background-color: var(--color-bg-light);
+    border-radius: 4px;
+}
+
+.strengths__title {
+    @extend %title-uppercase;
+
+    margin-bottom: 10px;
+
+    color: var(--color-secondary);
+}
+
+.strengths__desc {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+
+/* Секція наші сильні якості 
+.strengths {
+    @extend %list;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.strengths__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+    .strengths__icon-wrap {
+        @include centeringFlexbox();
+        
+            margin-bottom: 30px;
+            width: 270px;
+            height: 120px;
+    
+            background-color: var(--color-bg-light);
+            border-radius: 4px;
+        }
+    
+        .strengths__title {
+            @extend %title-uppercase;
+            
+            margin-bottom: 10px;
+    
+            color: var(--color-secondary);
+        }
+    
+        .strengths__desc {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+            letter-spacing: 0.03em;
+        }
+}
+*/

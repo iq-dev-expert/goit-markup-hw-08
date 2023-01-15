@@ -1,0 +1,23 @@
+.footer__logo {
+    @extend %logo;
+    @extend %link;
+
+    margin-bottom: 28px;
+
+    .logo__studio-white {
+        color: var(--color-white);
+    }
+}
+
+/* Футер лого 
+.footer__logo {
+    @extend %logo;
+    @extend %link;
+
+    margin-bottom: 28px;
+
+    .logo__studio-white {
+            color: var(--color-white);
+        }
+}
+*/

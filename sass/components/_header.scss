@@ -1,0 +1,20 @@
+.header {
+    min-width: $mobile;
+    
+    border-bottom: 1px solid var(--color-header-strip);
+}
+
+/* Хедер 
+.header {
+    border-bottom: 1px solid var(--color-header-strip);
+    
+    /* Хедер головна навігація 
+        .header__nav-wrapper {
+            @include centeringFlexbox($just-cont: flex-start);
+        }
+    
+        .header__nav {
+            display: flex;
+        }
+}
+*/

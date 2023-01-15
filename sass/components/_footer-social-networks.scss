@@ -1,0 +1,41 @@
+.social-networks-box__text {
+    @extend %title-uppercase;
+
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--color-white);
+}
+
+.social-networks--white-color {
+    margin-bottom: 60px;
+
+    color: var(--color-white);
+}
+
+.social-networks__item--dark-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Футер список соц мереж 
+.social-networks-box__text {
+    @extend %title-uppercase;
+    
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--color-white);
+}
+
+.social-networks {
+    @extend %list;
+}
+
+.social-networks--white-color {
+    color: var(--color-white);
+}
+
+.social-networks__item--dark-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+*/

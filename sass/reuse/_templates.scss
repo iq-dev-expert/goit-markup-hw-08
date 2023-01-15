@@ -1,0 +1,102 @@
+/* Лого */
+%logo {
+    display: inline-block;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+
+    .logo__web {
+        color: var(--color-accent);
+    }
+}
+
+/* Кнопка */
+%button {
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    border-radius: 4px;
+
+    border-color: transparent;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    transition: background-color var(--anim-dur) var(--main-cubic),
+        box-shadow var(--anim-dur) var(--main-cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-button-active);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Секція заголовок */
+.section-title {
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
+}
+
+/* Текст великими літерами */
+%title-uppercase {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* Соціальні мережі */
+.social-networks {
+    @extend %list;
+    
+    @include centeringFlexbox();
+
+    color: var(--color-icon-bg);
+
+    .social-networks__item {
+        display: flex;
+        border-radius: 50%;
+    }
+
+    .social-networks__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-networks__link {
+    @extend %link;
+    @include centeringFlexbox();
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: color var(--anim-dur) var(--main-cubic),
+        background-color var(--anim-dur) var(--main-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--color-white);
+        background-color: var(--color-accent);
+    }
+
+    .social-networks__icon {
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,20 @@
+/* Центрування флекса */
+@mixin centeringFlexbox($disp: flex, $al-items: center, $just-cont: center){
+    display: $disp;
+    align-items: $al-items;
+    justify-content: $just-cont;
+}
+
+/* Сітки */
+@mixin grid-list() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+}
+
+@mixin grid-item ($amount) {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    flex-basis: calc(100% / #{$amount} - var(--card-set-gap));
+}

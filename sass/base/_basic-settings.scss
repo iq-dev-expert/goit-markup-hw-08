@@ -1,0 +1,29 @@
+/* Базові налаштування */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-width: $mobile;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

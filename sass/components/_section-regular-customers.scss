@@ -1,0 +1,90 @@
+.regular-customers {
+    background-color: var(--color-white);
+
+    .regular-customers__container {
+        background-color: var(--color-white);
+    }
+}
+
+.regular-customers__list {
+    @extend %list;
+    @include grid-list();
+}
+
+.regular-customers__item {
+    @include grid-item(2);
+
+    background-color: var(--color-white);
+        color: var(--color-icon-bg);
+    
+        .regular-customers__icon {
+            fill: currentColor;
+        }
+}
+
+.regular-customers__link {
+    @extend %link;
+    @include centeringFlexbox();
+
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--color-icon-bg);
+    border-radius: 4px;
+
+    transition: color var(--anim-dur) var(--main-cubic),
+        border-color var(--anim-dur) var(--main-cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+    }
+}
+
+/* Секція постійні клієнти 
+.regular-customers {
+    background-color: var(--color-white);
+
+    .regular-customers__container {
+            background-color: var(--color-white);
+        }
+}
+
+.regular-customers__list {
+    @extend %list;
+    
+    display: flex;
+
+    .regular-customers__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.regular-customers__item {
+    background-color: var(--color-white);
+    color: var(--color-icon-bg);
+
+    .regular-customers__icon {
+            fill: currentColor;
+        }
+}
+
+.regular-customers__link {
+    @extend %link;
+    @include centeringFlexbox();
+    
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-icon-bg);
+    border-radius: 4px;
+
+    transition: color var(--anim-dur) var(--main-cubic),
+        border-color var(--anim-dur) var(--main-cubic);
+
+        &:hover,
+            &:focus {
+                color: var(--color-accent);
+                border-color: var(--color-accent);
+            }
+}
+*/
