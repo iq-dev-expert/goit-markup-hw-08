@@ -2,13 +2,15 @@
 .site-nav {
   @extend %list;
 
-  display: flex;
+  display: none;
 
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
 
-  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .site-nav__link {

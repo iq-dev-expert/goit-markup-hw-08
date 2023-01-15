@@ -1,0 +1,11 @@
+.button-menu {
+  display: inline-flex;
+  margin: 0 -8px 0 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

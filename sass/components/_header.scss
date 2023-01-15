@@ -1,7 +1,13 @@
 .header {
-    min-width: $mobile;
-    
-    border-bottom: 1px solid var(--color-header-strip);
+  min-width: $mobile;
+
+  border-bottom: 1px solid var(--color-header-strip);
+}
+
+.header__nav-wrapper {
+  @media screen and (max-width: $tablet) {
+    @include centeringFlexbox($just-cont: space-between);
+  }
 }
 
 /* Хедер 

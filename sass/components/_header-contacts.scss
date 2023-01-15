@@ -2,14 +2,16 @@
 .header-contacts {
   @extend %list;
 
-  display: flex;
+  display: none;
   margin-left: auto;
 
   .header-contacts__item:not(:last-child) {
     margin-right: 30px;
   }
 
-  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .header-contacts__link {

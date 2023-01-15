@@ -460,6 +460,20 @@ img {
   border-bottom: 1px solid var(--color-header-strip);
 }
 
+@media screen and (max-width: 768px) {
+  .header__nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /* Хедер 
 .header {
     border-bottom: 1px solid var(--color-header-strip);
@@ -498,13 +512,17 @@ img {
 */
 /* Хедер навігація по сайту */
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
 }
 .site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav__link {
@@ -566,14 +584,18 @@ img {
 
 /* Хедер список контактів */
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   display: none;
+  margin-left: auto;
 }
 .header-contacts .header-contacts__item:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-contacts__link {
@@ -602,6 +624,21 @@ img {
 .header-contacts__link .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.button-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 -8px 0 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
 }
 
 .hero {
