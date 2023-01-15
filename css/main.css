@@ -651,6 +651,26 @@ img {
   background-color: transparent;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform var(--anim-dur) var(--main-cubic);
+  transition: -webkit-transform var(--anim-dur) var(--main-cubic);
+  transition: transform var(--anim-dur) var(--main-cubic);
+  transition: transform var(--anim-dur) var(--main-cubic), -webkit-transform var(--anim-dur) var(--main-cubic);
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
 .hero {
   text-align: center;
 }
