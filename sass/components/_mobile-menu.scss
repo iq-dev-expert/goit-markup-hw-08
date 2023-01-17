@@ -23,3 +23,24 @@
 .mobile-menu.is-open {
   transform: translateX(0%);
 }
+
+// Зробити 2 блоки, і задати верхньому авто маржин вниз, або подивитися як там працювати з флексами в колонку.
+
+// .mobile-menu__item:nth-child(-n + 3) {
+//   color: tomato;
+//   font-size: 40px;
+// }
+
+// .mobile-menu__item:nth-child(3) {
+//   margin-bottom: auto;
+// }
+
+// .mobile-menu__item:nth-child(4) {
+//   color: black;
+//   font-size: 32px;
+// }
+
+// .mobile-menu__item:nth-last-child(1) {
+//   color: turquoise;
+//   font-size: 25px;
+// }
