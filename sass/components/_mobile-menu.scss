@@ -1,4 +1,8 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -13,10 +17,6 @@
 
   &__list {
     @extend %list;
-
-    .mobile-menu__link {
-      @extend %link;
-    }
   }
 }
 
@@ -24,23 +24,32 @@
   transform: translateX(0%);
 }
 
-// Зробити 2 блоки, і задати верхньому авто маржин вниз, або подивитися як там працювати з флексами в колонку.
+.mobile-menu-nav {
+  @extend %list;
 
-// .mobile-menu__item:nth-child(-n + 3) {
-//   color: tomato;
-//   font-size: 40px;
-// }
+  &__link {
+    @extend %link;
+  }
+}
 
-// .mobile-menu__item:nth-child(3) {
-//   margin-bottom: auto;
-// }
+.mobile-menu-contacts {
+  @extend %list;
 
-// .mobile-menu__item:nth-child(4) {
-//   color: black;
-//   font-size: 32px;
-// }
+  &__link {
+    @extend %link;
+  }
 
-// .mobile-menu__item:nth-last-child(1) {
-//   color: turquoise;
-//   font-size: 25px;
-// }
+  &__item:nth-child(2) {
+    margin-bottom: 64px;
+  }
+}
+
+.mobile-soc-netw {
+  @extend %list;
+
+  display: flex;
+
+  &__link {
+    @extend %link;
+  }
+}
