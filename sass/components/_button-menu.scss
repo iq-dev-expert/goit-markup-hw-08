@@ -5,6 +5,16 @@
   border: none;
   background-color: transparent;
 
+  &__icon {
+    fill: var(--color-secondary);
+    transition: fill var(--anim-dur) var(--main-cubic);
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--color-accent);
+  }
+
   @media screen and (min-width: $tablet) {
     display: none;
   }

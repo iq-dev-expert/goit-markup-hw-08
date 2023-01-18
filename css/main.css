@@ -635,6 +635,14 @@ img {
   border: none;
   background-color: transparent;
 }
+.button-menu__icon {
+  fill: var(--color-secondary);
+  -webkit-transition: fill var(--anim-dur) var(--main-cubic);
+  transition: fill var(--anim-dur) var(--main-cubic);
+}
+.button-menu__icon:hover, .button-menu__icon:focus {
+  fill: var(--color-accent);
+}
 @media screen and (min-width: 768px) {
   .button-menu {
     display: none;
@@ -652,6 +660,14 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.button-menu-close__icon {
+  fill: var(--color-secondary);
+  -webkit-transition: fill var(--anim-dur) var(--main-cubic);
+  transition: fill var(--anim-dur) var(--main-cubic);
+}
+.button-menu-close__icon:hover, .button-menu-close__icon:focus {
+  fill: var(--color-accent);
 }
 
 .mobile-menu {
@@ -684,14 +700,60 @@ img {
           transform: translateX(0%);
 }
 
-.mobile-menu-contacts__item:nth-child(2) {
-  margin-bottom: 64px;
+.mobile-menu-nav__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary);
+}
+.mobile-menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu-nav__link {
+  -webkit-transition: color var(--anim-dur) var(--main-cubic);
+  transition: color var(--anim-dur) var(--main-cubic);
+}
+.mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus {
+  color: var(--color-accent);
+}
+.mobile-menu-nav__link--current {
+  color: var(--color-accent);
 }
 
+.mobile-menu-contacts__item:nth-child(1) {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+.mobile-menu-contacts__item:nth-child(2) {
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+}
 .mobile-soc-netw {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mobile-soc-netw__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+.mobile-soc-netw__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-soc-netw__item:not(:first-child) {
+  margin-left: 10px;
 }
 .hero {
   text-align: center;
