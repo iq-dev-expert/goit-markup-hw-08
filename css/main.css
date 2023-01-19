@@ -281,7 +281,7 @@ summary {
 }
 
 /* Скидання налаштувань за замовчуванням */
-.footer-contacts, .regular-customers__list, .our-team .cards-list, .strengths, .mobile-soc-netw, .mobile-menu-contacts, .mobile-menu-nav, .mobile-menu__list, .header-contacts, .site-nav, .social-networks {
+.data-list, .footer-contacts, .regular-customers__list, .our-team .cards-list, .strengths, .mobile-soc-netw, .mobile-menu-contacts, .mobile-menu-nav, .mobile-menu__list, .header-contacts, .site-nav, .social-networks {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -364,7 +364,7 @@ img {
 }
 
 /* Кнопка */
-.footer-form__button, .hero .button {
+.form-modal__button, .footer-form__button, .hero .button {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -381,7 +381,7 @@ img {
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic);
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic), -webkit-box-shadow var(--anim-dur) var(--main-cubic);
 }
-.footer-form__button:hover, .hero .button:hover, .footer-form__button:focus, .hero .button:focus {
+.form-modal__button:hover, .footer-form__button:hover, .hero .button:hover, .form-modal__button:focus, .footer-form__button:focus, .hero .button:focus {
   background-color: var(--color-button-active);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1430,6 +1430,27 @@ img {
     pointer-events: none;
 }
 */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  min-width: 450px;
+  min-height: 609px;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform var(--anim-dur) var(--main-cubic);
+  transition: -webkit-transform var(--anim-dur) var(--main-cubic);
+  transition: transform var(--anim-dur) var(--main-cubic);
+  transition: transform var(--anim-dur) var(--main-cubic), -webkit-transform var(--anim-dur) var(--main-cubic);
+  background-color: var(--color-white);
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+}
+
 /* Модальне вікно 
 .modal {
     position: absolute;
@@ -1450,6 +1471,33 @@ img {
     transform: translate(-50%, -50%) scale(0.7);
 }
 */
+.button-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  -webkit-transition: fill var(--anim-dur) var(--main-cubic);
+  transition: fill var(--anim-dur) var(--main-cubic);
+}
+.button-close:hover, .button-close:focus {
+  fill: var(--color-accent);
+}
+
 /* Кнопка закрити модалку  
 .button-close {
     @include centeringFlexbox();
@@ -1474,6 +1522,201 @@ img {
         }
 }
 */
+.form-modal__text {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+.form-modal__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data-list__item:nth-child(-n+3) {
+  margin-bottom: 10px;
+}
+
+.data-list__item:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.data-list__item:not(:last-child) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.data-list__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.data-list__item-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+}
+
+.data-list__item-box {
+  position: relative;
+}
+
+.data-list__item-input {
+  padding: 11px 42px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+  transition: border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+}
+.data-list__item-input:not(:-moz-placeholder-shown) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+.data-list__item-input:not(:-ms-input-placeholder) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+.data-list__item-input:hover, .data-list__item-input:focus, .data-list__item-input:not(:placeholder-shown) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+
+.data-list__item-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  fill: var(--color-secondary);
+  -webkit-transition: fill var(--anim-dur) var(--main-cubic);
+  transition: fill var(--anim-dur) var(--main-cubic);
+}
+.data-list__item-input:not(:-moz-placeholder-shown) + .data-list__item-icon {
+  fill: var(--color-accent);
+}
+.data-list__item-input:not(:-ms-input-placeholder) + .data-list__item-icon {
+  fill: var(--color-accent);
+}
+.data-list__item-input:hover + .data-list__item-icon, .data-list__item-input:focus + .data-list__item-icon, .data-list__item-input:not(:placeholder-shown) + .data-list__item-icon {
+  fill: var(--color-accent);
+}
+
+.data-list__textarea {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+  transition: border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+}
+.data-list__textarea:not(:-moz-placeholder-shown) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+.data-list__textarea:not(:-ms-input-placeholder) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+.data-list__textarea:hover, .data-list__textarea:focus, .data-list__textarea:not(:placeholder-shown) {
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+.data-list__textarea::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.data-list__textarea::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.data-list__textarea:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.data-list__textarea::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.data-list__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.data-list__checkbox {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.data-list__checkbox-icon {
+  position: absolute;
+  left: 20px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 2px;
+  pointer-events: none;
+  fill: transparent;
+  -webkit-transition: fill var(--anim-dur) var(--main-cubic), border var(--anim-dur) var(--main-cubic);
+  transition: fill var(--anim-dur) var(--main-cubic), border var(--anim-dur) var(--main-cubic);
+}
+.data-list__checkbox:checked + .data-list__checkbox-icon {
+  border: transparent;
+  fill: var(--color-accent);
+}
+
+.data-list__checkbox-label {
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+
+.data-list__checkbox-link {
+  text-decoration: underline;
+  color: var(--color-accent);
+}
+
 /* Форма модалки 
 .form-modal__text {
     text-align: center;
