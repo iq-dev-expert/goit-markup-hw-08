@@ -1,50 +1,50 @@
 .footer-form__text {
-    @extend %title-uppercase;
+  @extend %title-uppercase;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .footer-form__input {
-    margin-bottom: 20px;
-    padding: 15px 16px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
 
-    width: 450px;
-    height: 50px;
+  min-width: 450px;
+  height: 50px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: var(--color-bg-dark);
-    color: var(--color-white);
-    transition: filter var(--anim-dur) var(--main-cubic),
-        border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+  transition: filter var(--anim-dur) var(--main-cubic),
+    border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
 
-    &:hover,
-    &:focus,
-    &:not(:placeholder-shown) {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-color: var(--color-accent);
-        outline-color: var(--color-accent);
-    }
+  &:hover,
+  &:focus,
+  &:not(:placeholder-shown) {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-color: var(--color-accent);
+    outline-color: var(--color-accent);
+  }
 
-    &::placeholder {
-        font-size: 16px;
-        line-height: calc(20 / 16);
-        letter-spacing: 0.03em;
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
 
-        color: rgba(255, 255, 255, 0.6);
-    }
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-form__button {
-    @extend %button;
-    @include centeringFlexbox();
-    margin: 0 auto;
+  @extend %button;
+  @include centeringFlexbox();
+  margin: 0 auto;
 
-    .button__icon {
-        margin-left: 10px;
-    }
+  .button__icon {
+    margin-left: 10px;
+  }
 }
 
 /* Футер форма підпишіться на розсилку 
