@@ -1255,7 +1255,6 @@ img {
   margin-bottom: 20px;
   padding: 15px 16px;
   width: 100%;
-  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--color-bg-dark);
@@ -1428,8 +1427,7 @@ img {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  width: 95%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform var(--anim-dur) var(--main-cubic);
@@ -1437,6 +1435,11 @@ img {
   transition: transform var(--anim-dur) var(--main-cubic);
   transition: transform var(--anim-dur) var(--main-cubic), -webkit-transform var(--anim-dur) var(--main-cubic);
   background-color: var(--color-white);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .backdrop.is-hidden .modal {
