@@ -41,6 +41,7 @@
 }
 */
 
-// @media screen and (max-height: 700px) {
+// @media screen and (max-height: 600px) {
 //   overflow: auto;
 // }
+// або одразу overflow: auto; а потім вже: @media screen and (min-height: 600px) {overflow: visible;}
