@@ -101,15 +101,12 @@
 
   &__item:not(:last-child) {
     padding-right: 10px;
+    margin-right: 10px;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
   &__link {
     @extend %link;
-  }
-
-  .mobile-soc-netw__stick {
-    margin-right: 10px;
-
-    color: rgba(33, 33, 33, 0.2);
   }
 }
