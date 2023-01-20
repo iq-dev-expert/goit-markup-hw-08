@@ -5,8 +5,8 @@
 
   padding: 40px;
 
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-dur) var(--main-cubic);
