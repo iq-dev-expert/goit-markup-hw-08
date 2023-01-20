@@ -130,7 +130,7 @@
 
 .data-list__checkbox-icon {
   position: absolute;
-  left: 20px;
+  left: 0;
 
   border: 2px solid var(--color-secondary);
   border-radius: 2px;
@@ -146,6 +146,8 @@
 
 .data-list__checkbox-label {
   padding-left: 24px;
+
+  width: 100%;
 
   font-size: 12px;
   line-height: calc(14 / 12);

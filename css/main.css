@@ -1688,7 +1688,7 @@ img {
 
 .data-list__checkbox-icon {
   position: absolute;
-  left: 20px;
+  left: 0;
   border: 2px solid var(--color-secondary);
   border-radius: 2px;
   pointer-events: none;
@@ -1703,6 +1703,7 @@ img {
 
 .data-list__checkbox-label {
   padding-left: 24px;
+  width: 100%;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
