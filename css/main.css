@@ -320,6 +320,10 @@ p {
 }
 
 /* Базові налаштування */
+body.modal-open {
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-primary);
