@@ -23,6 +23,10 @@ body {
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 
 img {
