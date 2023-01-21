@@ -1212,6 +1212,17 @@ img {
   text-align: center;
   background-color: var(--color-bg-dark);
 }
+@media screen and (min-width: 768px) {
+  .footer .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 
 /* Футер 
 .footer {
