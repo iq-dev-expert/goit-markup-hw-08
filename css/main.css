@@ -998,15 +998,36 @@ img {
 .our-team {
   background-color: var(--color-bg-light);
 }
-.cards-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .our-team .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
 }
 
+@media screen and (max-width: 767.5px) {
+  .cards-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .cards-list__item {
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .cards-list__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    -ms-flex-preferred-size: calc(100% / 2 - var(--card-set-gap));
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
 }
 .cards-list__item .card__box {
   padding: 30px 30px 24px;
