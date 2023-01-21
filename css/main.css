@@ -1642,7 +1642,7 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
 }
@@ -1760,32 +1760,32 @@ img {
   outline-color: var(--color-accent);
 }
 .data-list__textarea::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .data-list__textarea::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .data-list__textarea:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .data-list__textarea::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .data-list__textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }

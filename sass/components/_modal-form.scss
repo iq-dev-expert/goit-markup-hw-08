@@ -4,7 +4,7 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   letter-spacing: 0.03em;
 
   color: var(--color-secondary);
@@ -105,8 +105,8 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
