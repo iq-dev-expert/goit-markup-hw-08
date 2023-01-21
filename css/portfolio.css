@@ -952,6 +952,11 @@ img {
   transition: filter var(--anim-dur) var(--main-cubic), border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
   transition: filter var(--anim-dur) var(--main-cubic), border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic), -webkit-filter var(--anim-dur) var(--main-cubic);
 }
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
 .footer-form__input:not(:-moz-placeholder-shown) {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-color: var(--color-accent);
