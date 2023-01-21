@@ -1,23 +1,29 @@
 .modal {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
 
   padding: 40px;
 
   width: 95%;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%) scale(1);
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: var(--color-white);
 
   @media screen and (min-width: $mobile) {
     width: 450px;
   }
+
+  @media screen and (max-height: 700px) {
+    height: 80%;
+
+    overflow: auto;
+  }
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
+  transform: translate(-50%) scale(0.7);
 }
 
 /* Модальне вікно 
