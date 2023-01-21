@@ -499,6 +499,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -522,6 +528,13 @@ img {
 }
 .header__logo .logo__studio-black {
   color: var(--color-black);
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 88px;
+  }
 }
 
 /* Хедер лого 

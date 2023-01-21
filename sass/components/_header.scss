@@ -14,7 +14,7 @@
 
 .header__nav {
   @media screen and (min-width: $tablet) {
-    display: flex;
+    @include centeringFlexbox();
   }
 }
 
