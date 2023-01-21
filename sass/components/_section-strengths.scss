@@ -1,8 +1,10 @@
 .strengths {
   @extend %list;
 
-  .strengths__item:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: ($tablet - 0.5px)) {
+    .strengths__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
