@@ -56,5 +56,16 @@
       margin-right: 10px;
       fill: currentColor;
     }
+
+    @media screen and (min-width: $desktop) {
+      .header-contacts__icon-email {
+        width: 16px;
+        height: 12px;
+      }
+
+      .header-contacts__icon-tel {
+        height: 16px;
+      }
+    }
   }
 }

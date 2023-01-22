@@ -691,6 +691,15 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .header-contacts .header-contacts__link .header-contacts__icon-email {
+    width: 16px;
+    height: 12px;
+  }
+  .header-contacts .header-contacts__link .header-contacts__icon-tel {
+    height: 16px;
+  }
+}
 
 .button-menu {
   display: -webkit-inline-box;
