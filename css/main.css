@@ -833,8 +833,7 @@ img {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -844,6 +843,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 .hero .hero__title {
   margin-left: auto;
@@ -856,6 +860,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 /* Блок герой! 
 .hero {
