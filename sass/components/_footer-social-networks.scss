@@ -1,20 +1,24 @@
 .social-networks-box__text {
-    @extend %title-uppercase;
+  @extend %title-uppercase;
 
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .social-networks--white-color {
-    margin-bottom: 60px;
+  margin: 0 0 60px;
 
-    color: var(--color-white);
+  color: var(--color-white);
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .social-networks__item--dark-bg {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Футер список соц мереж 

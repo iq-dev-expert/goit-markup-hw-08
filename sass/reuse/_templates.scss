@@ -79,6 +79,10 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 /* Соціальні мережі */

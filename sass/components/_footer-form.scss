@@ -1,3 +1,9 @@
+@media screen and (min-width: $desktop) {
+  .footer-form__box {
+    @include centeringFlexbox($just-cont: center);
+  }
+}
+
 .footer-form__text {
   @extend %title-uppercase;
 
@@ -7,10 +13,6 @@
 }
 
 .footer-form__input {
-  @media screen and (min-width: $tablet) {
-    width: 450px;
-  }
-
   margin-bottom: 20px;
   padding: 15px 16px;
 
@@ -22,6 +24,15 @@
   color: var(--color-white);
   transition: filter var(--anim-dur) var(--main-cubic),
     border-color var(--anim-dur) var(--main-cubic), outline-color var(--anim-dur) var(--main-cubic);
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
 
   &:hover,
   &:focus,
@@ -44,6 +55,10 @@
   @extend %button;
   @include centeringFlexbox();
   margin: 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 
   .button__icon {
     margin-left: 10px;

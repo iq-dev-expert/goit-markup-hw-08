@@ -437,6 +437,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form__text, .social-networks-box__text {
+    text-align: left;
+  }
+}
 
 /* Соціальні мережі */
 .social-networks {
@@ -860,6 +865,20 @@ img {
         justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer .footer__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
 
 /* Футер 
 .footer {
@@ -901,10 +920,16 @@ img {
 }
 
 .footer-contacts__item:last-child {
-  margin-bottom: 60px;
+  margin: 0 0 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts__item:last-child {
+    margin: 0;
+  }
 }
 
 .footer-contacts__link {
+  display: block;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
@@ -961,8 +986,13 @@ img {
 }
 
 .social-networks--white-color {
-  margin-bottom: 60px;
+  margin: 0 0 60px;
   color: var(--color-white);
+}
+@media screen and (min-width: 1200px) {
+  .social-networks--white-color {
+    margin: 0;
+  }
 }
 
 .social-networks__item--dark-bg {
@@ -991,6 +1021,19 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
 }
 */
+@media screen and (min-width: 1200px) {
+  .footer-form__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .footer-form__text {
   margin-bottom: 20px;
   color: var(--color-white);
@@ -1012,6 +1055,12 @@ img {
 @media screen and (min-width: 768px) {
   .footer-form__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }
 .footer-form__input:not(:-moz-placeholder-shown) {
@@ -1072,6 +1121,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin: 0;
+  }
 }
 .footer-form__button .button__icon {
   margin-left: 10px;
