@@ -18,6 +18,19 @@
       padding-bottom: 21px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    .header-contacts__item:nth-child(1) {
+      margin-right: 40px;
+      padding: 32px 0;
+    }
+
+    .header-contacts__item:nth-child(2) {
+      padding: 32px 0;
+    }
+  }
 }
 
 .header-contacts__link {
@@ -31,6 +44,11 @@
 
   color: var(--color-primary);
   transition: color var(--anim-dur) var(--main-cubic);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 
   &:hover,
   &:focus {
