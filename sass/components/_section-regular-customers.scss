@@ -13,9 +13,15 @@
 
 .regular-customers__item {
   @include grid-item(2);
+
   @media screen and (min-width: $tablet) {
     @include grid-item(3);
   }
+
+  @media screen and (min-width: $desktop) {
+    @include grid-item(6);
+  }
+
   background-color: var(--color-white);
   color: var(--color-icon-bg);
 
