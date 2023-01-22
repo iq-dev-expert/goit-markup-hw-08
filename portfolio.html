@@ -37,19 +37,25 @@
             <!-- Хедер список контактів -->
             <ul class="header-contacts">
                 <li class="header-contacts__item">
-                    <a href=" mailto:info@devstudio.com" class="header-contacts__link"><svg
-                            class="header-contacts__icon" width="16" height="12">
+                    <a href=" mailto:info@devstudio.com" class="header-contacts__link header-contacts__link-email"><svg
+                            class="header-contacts__icon" width="14" height="10">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="header-contacts__item">
-                    <a href="tel:+380961111111" class="header-contacts__link"><svg class="header-contacts__icon"
-                            width="10" height="16">
+                    <a href="tel:+380961111111" class="header-contacts__link header-contacts__link-tel"><svg
+                            class="header-contacts__icon" width="10" height="14">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button class="button-menu js-open-menu" type="button">
+                <svg width="40" height="40" class="button-menu__icon">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -266,8 +272,7 @@
                         <li class="footer-contacts__item">
                             <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                                 rel="noopener noreferrer nofollow"
-                                class="footer-contacts__link footer-contacts__link--white">м. Київ, пр-т Лесі
-                                Українки,
+                                class="footer-contacts__link footer-contacts__link--white">м. Київ, пр-т Лесі Українки,
                                 26</a>
                         </li>
                         <li class="footer-contacts__item">
@@ -324,6 +329,52 @@
             </form>
         </div>
     </footer>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu js-menu-container">
+        <button class="button-menu-close js-close-menu" type="button">
+            <svg width="40" height="40" class="button-menu-close__icon">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+            <li class="mobile-menu-nav__item">
+                <a href="./index.html" class="mobile-menu-nav__link">Студія</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+                <a href="./portfolio.html" class="mobile-menu-nav__link mobile-menu-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="mobile-menu-nav__item"><a href="#" class="mobile-menu-nav__link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+            <li class="mobile-menu-contacts__item">
+                <a href="tel:+380961111111" class="mobile-menu-contacts__link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-contacts__item">
+                <a href=" mailto:info@devstudio.com" class="mobile-menu-contacts__link">info@devstudio.com</a>
+            </li>
+            <ul class="mobile-soc-netw">
+                <li class="mobile-soc-netw__item"><a href="https://www.instagram.com/"
+                        class="mobile-soc-netw__link">Instagram</a></li>
+                <li class="mobile-soc-netw__item"><a href="https://twitter.com/"
+                        class="mobile-soc-netw__link">Twitter</a>
+                </li>
+                <li class="mobile-soc-netw__item"><a href="https://www.facebook.com/"
+                        class="mobile-soc-netw__link">Facebook</a>
+                </li>
+                <li class="mobile-soc-netw__item"><a href="https://www.linkedin.com/"
+                        class="mobile-soc-netw__link">LinkedIn</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Скрипт мобільного меню -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
