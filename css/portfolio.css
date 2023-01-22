@@ -753,9 +753,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -775,6 +772,9 @@ img {
           transform: translateX(0%);
 }
 
+.mobile-menu-nav {
+  margin-bottom: auto;
+}
 .mobile-menu-nav__item {
   font-weight: 500;
   font-size: 40px;

@@ -1,7 +1,6 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   position: fixed;
   top: 0;
@@ -26,6 +25,7 @@
 
 .mobile-menu-nav {
   @extend %list;
+  margin-bottom: auto;
 
   &__item {
     font-weight: 500;
