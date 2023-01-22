@@ -15,6 +15,10 @@
     width: 450px;
   }
 
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
+
   @media screen and (max-height: 700px) {
     height: 80%;
 

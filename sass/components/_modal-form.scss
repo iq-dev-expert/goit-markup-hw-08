@@ -8,6 +8,10 @@
   letter-spacing: 0.03em;
 
   color: var(--color-secondary);
+
+  @media screen and (min-width: $desktop) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .data-list {
@@ -110,6 +114,11 @@
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: $desktop) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
 }
 
@@ -153,6 +162,11 @@
   line-height: calc(14 / 12);
 
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .data-list__checkbox-link {

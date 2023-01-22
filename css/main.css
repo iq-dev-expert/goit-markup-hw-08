@@ -1723,6 +1723,11 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 @media screen and (max-height: 700px) {
   .modal {
     height: 80%;
@@ -1814,6 +1819,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__text {
+    line-height: 1.15;
+  }
 }
 
 .form-modal__button {
@@ -1958,6 +1968,28 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 1200px) {
+  .data-list__textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .data-list__textarea::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .data-list__textarea:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .data-list__textarea::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .data-list__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 
 .data-list__checkbox {
   position: absolute;
@@ -1995,6 +2027,12 @@ img {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .data-list__checkbox-label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .data-list__checkbox-link {
