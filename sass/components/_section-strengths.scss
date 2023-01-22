@@ -17,6 +17,10 @@
     @include grid-item(2);
   }
 
+  @media screen and (min-width: $desktop) {
+    @include grid-item(4);
+  }
+
   .strengths__icon-wrap {
     @include centeringFlexbox();
 
