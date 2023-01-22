@@ -44,6 +44,14 @@
   }
 }
 
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+
 /* Секція заголовок */
 .section-title {
   margin-bottom: 30px;
@@ -54,6 +62,10 @@
   line-height: calc(33 / 28);
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 /* Текст великими літерами */

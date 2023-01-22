@@ -1,4 +1,38 @@
-.we-do {display: none;}
+.we-do {
+  display: none;
+  padding-top: 0;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+
+  .img {
+    @extend %list;
+
+    @include grid-list();
+  }
+}
+
+.img__item {
+  position: relative;
+
+  @include grid-item(3);
+
+  .img__caption {
+    @extend %title-uppercase;
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+
+    width: 100%;
+    padding: 27px 0;
+
+    color: var(--color-white);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
 
 /* Секція чим ми займаємося 
 .we-do {

@@ -281,7 +281,7 @@ summary {
 }
 
 /* Скидання налаштувань за замовчуванням */
-.data-list, .footer-contacts, .regular-customers__list, .our-team .cards-list, .strengths, .mobile-soc-netw, .mobile-menu-contacts, .mobile-menu-nav, .mobile-menu__list, .header-contacts, .site-nav, .social-networks {
+.data-list, .footer-contacts, .regular-customers__list, .our-team .cards-list, .we-do .img, .strengths, .mobile-soc-netw, .mobile-menu-contacts, .mobile-menu-nav, .mobile-menu__list, .header-contacts, .site-nav, .social-networks {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -328,15 +328,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--color-primary);
   background-color: var(--color-white);
-}
-
-.section {
-  padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0;
-  }
 }
 
 .container {
@@ -410,6 +401,15 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 /* Секція заголовок */
 .section-title {
   margin-bottom: 30px;
@@ -420,9 +420,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-secondary);
 }
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
 
 /* Текст великими літерами */
-.footer-form__text, .social-networks-box__text, .strengths__item .strengths__title {
+.footer-form__text, .social-networks-box__text, .img__item .img__caption, .strengths__item .strengths__title {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -1015,6 +1020,39 @@ img {
 */
 .we-do {
   display: none;
+  padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .we-do {
+    display: block;
+  }
+}
+.we-do .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.img__item {
+  position: relative;
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
+      flex-basis: calc(100% / 3 - var(--card-set-gap));
+}
+.img__item .img__caption {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 27px 0;
+  color: var(--color-white);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Секція чим ми займаємося 

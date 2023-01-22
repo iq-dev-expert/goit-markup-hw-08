@@ -330,15 +330,6 @@ body {
   background-color: var(--color-white);
 }
 
-.section {
-  padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0;
-  }
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -410,6 +401,15 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 /* Секція заголовок */
 .section-title {
   margin-bottom: 30px;
@@ -419,6 +419,11 @@ img {
   line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 /* Текст великими літерами */

@@ -9,14 +9,6 @@ body {
   background-color: var(--color-white);
 }
 
-.section {
-  padding: 60px 0;
-
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-  }
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
