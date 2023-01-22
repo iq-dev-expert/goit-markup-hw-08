@@ -1125,9 +1125,22 @@ img {
         flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
 }
+@media screen and (min-width: 1200px) {
+  .cards-list__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    -ms-flex-preferred-size: calc(100% / 4 - var(--card-set-gap));
+        flex-basis: calc(100% / 4 - var(--card-set-gap));
+  }
+}
 .cards-list__item .card__box {
   padding: 30px 30px 24px;
   background-color: var(--color-white);
+}
+@media screen and (min-width: 1200px) {
+  .cards-list__item .card__box {
+    padding: 30px;
+  }
 }
 .cards-list__item .card__title {
   margin-bottom: 10px;

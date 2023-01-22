@@ -2,10 +2,11 @@
   background-color: var(--color-bg-light);
 
   .cards-list {
+    @extend %list;
+
     @media screen and (min-width: $tablet) {
       @include grid-list();
     }
-    @extend %list;
   }
 }
 
@@ -25,9 +26,17 @@
     @include grid-item(2);
   }
 
+  @media screen and (min-width: $desktop) {
+    @include grid-item(4);
+  }
+
   .card__box {
     padding: 30px 30px 24px;
     background-color: var(--color-white);
+
+    @media screen and (min-width: $desktop) {
+      padding: 30px;
+    }
   }
 
   .card__title {
