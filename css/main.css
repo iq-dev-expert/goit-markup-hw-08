@@ -323,6 +323,11 @@ p {
 body.modal-open {
   overflow: hidden;
 }
+@media screen and (min-width: 1200px) {
+  body.modal-open {
+    overflow: auto;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;

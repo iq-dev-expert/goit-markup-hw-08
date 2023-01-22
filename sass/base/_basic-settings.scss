@@ -1,6 +1,10 @@
 /* Базові налаштування */
 body.modal-open {
   overflow: hidden;
+
+  @media screen and (min-width: $desktop) {
+    overflow: auto;
+  }
 }
 
 body {
