@@ -8,15 +8,13 @@
 
   @media screen and (min-width: $tablet) {
     .footer__container {
-      display: flex;
+      @include centeringFlexbox($al-items: baseline, $just-cont: space-around);
       flex-wrap: wrap;
-      justify-content: space-around;
     }
   }
 
   @media screen and (min-width: $desktop) {
     .footer__container {
-      flex-wrap: nowrap;
       justify-content: space-between;
     }
   }
