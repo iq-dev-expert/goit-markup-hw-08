@@ -799,10 +799,16 @@ img {
 .mobile-menu-contacts__item:nth-child(1) {
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 26px;
+  line-height: 1.5384615385;
   letter-spacing: 0.02em;
   color: var(--color-accent);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts__item:nth-child(1) {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 .mobile-menu-contacts__item:nth-child(2) {
   margin-bottom: 64px;
@@ -820,10 +826,16 @@ img {
 }
 .mobile-soc-netw__item {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 10px;
+  line-height: 2.2;
   letter-spacing: 0.02em;
   color: var(--color-accent);
+}
+@media screen and (min-width: 480px) {
+  .mobile-soc-netw__item {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 .mobile-soc-netw__item:not(:last-child) {
   padding-right: 10px;
