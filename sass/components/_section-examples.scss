@@ -2,8 +2,20 @@
 .examples {
   @extend %list;
 
+  @media screen and (min-width: $tablet) {
+    @include grid-list();
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      @include grid-item(2);
+    }
+  }
+
   &__item:not(:last-child) {
-    margin: 0 0 30px 0;
+    @media screen and (max-width: ($tablet - 0.5px)) {
+      margin: 0 0 30px 0;
+    }
   }
 }
 

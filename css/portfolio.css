@@ -854,10 +854,17 @@ img {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
-.filters__item {
-  margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+  .filters {
+    margin: 0 0 30px 0;
+  }
+}
+@media screen and (max-width: 767.5px) {
+  .filters__item {
+    margin-bottom: 15px;
+  }
 }
 .filters .filters__item:not(:last-child) {
   margin-right: 8px;
@@ -925,8 +932,29 @@ img {
   }
 }*/
 /* Секція приклади наших робіт */
-.examples__item:not(:last-child) {
-  margin: 0 0 30px 0;
+@media screen and (min-width: 768px) {
+  .examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    -ms-flex-preferred-size: calc(100% / 2 - var(--card-set-gap));
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+}
+@media screen and (max-width: 767.5px) {
+  .examples__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .examples__link {
