@@ -10,6 +10,10 @@
     @media screen and (min-width: $tablet) {
       @include grid-item(2);
     }
+
+    @media screen and (min-width: $desktop) {
+      @include grid-item(3);
+    }
   }
 
   &__item:not(:last-child) {
