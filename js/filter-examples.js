@@ -5,8 +5,20 @@
     const filterButtons = document.querySelectorAll('.filters__item');
 
     filterButtons.forEach(button => {
-      button.addEventListener('click', () => onFilterButtonClick(button));
+      button.addEventListener('click', () => {
+        setActiveButton(button.children[0]);
+        onFilterButtonClick(button);
+      });
     });
+  }
+
+  function setActiveButton(button) {
+    const activeButton = document.querySelector('.active-button');
+
+    if (activeButton) {
+      activeButton.classList.remove('active-button');
+    }
+    button.classList.add('active-button');
   }
 
   function onFilterButtonClick(button) {
