@@ -14,9 +14,9 @@
     const filterValue = button.getAttribute('data-filter');
 
     exampleItems.forEach(item => {
-      item.style.display = 'none';
+      item.classList.add('visually-hidden');
       if (filterValue === 'all' || item.classList.contains(filterValue)) {
-        item.style.display = 'block';
+        item.classList.remove('visually-hidden');
       }
     });
   }
