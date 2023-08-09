@@ -67,25 +67,25 @@
                 <h1 class="visually-hidden">Приклади наших робіт</h1>
                 <!-- Фільтри -->
                 <ul class="filters">
-                    <li class="filters__item">
+                    <li class="filters__item" data-filter="all">
                         <button type="button" class="filters__button">Усі</button>
                     </li>
-                    <li class="filters__item">
+                    <li class="filters__item" data-filter="web-sites">
                         <button type="button" class="filters__button">Веб-сайти</button>
                     </li>
-                    <li class="filters__item">
+                    <li class="filters__item" data-filter="apps">
                         <button type="button" class="filters__button">Додатки</button>
                     </li>
-                    <li class="filters__item">
+                    <li class="filters__item" data-filter="design">
                         <button type="button" class="filters__button">Дизайн</button>
                     </li>
-                    <li class="filters__item">
+                    <li class="filters__item" data-filter="marketing">
                         <button type="button" class="filters__button">Маркетинг</button>
                     </li>
                 </ul>
                 <!-- Секція приклади наших робіт -->
                 <ul class="examples">
-                    <li class="examples__item">
+                    <li class="examples__item web-sites">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/laptop-354.jpg 354w, ./images/examples/laptop-370.jpg 370w, ./images/examples/laptop-450.jpg 450w, ./images/examples/laptop-708.jpg 708w, ./images/examples/laptop-740.jpg 740w, ./images/examples/laptop-900.jpg 900w"
@@ -105,7 +105,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item design">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/poster-basketball-354.jpg 354w, ./images/examples/poster-basketball-370.jpg 370w, ./images/examples/poster-basketball-450.jpg 450w, ./images/examples/poster-basketball-708.jpg 708w, ./images/examples/poster-basketball-740.jpg 740w, ./images/examples/poster-basketball-900.jpg 900w"
@@ -127,7 +127,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item apps">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/seafood-restaurant-354.jpg 354w, ./images/examples/seafood-restaurant-370.jpg 370w, ./images/examples/seafood-restaurant-450.jpg 450w, ./images/examples/seafood-restaurant-708.jpg 708w, ./images/examples/seafood-restaurant-740.jpg 740w, ./images/examples/seafood-restaurant-900.jpg 900w"
@@ -147,7 +147,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item marketing">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/headphones-354.jpg 354w, ./images/examples/headphones-370.jpg 370w, ./images/examples/headphones-450.jpg 450w, ./images/examples/headphones-708.jpg 708w, ./images/examples/headphones-740.jpg 740w, ./images/examples/headphones-900.jpg 900w"
@@ -167,7 +167,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item apps">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/boxes-354.jpg 354w, ./images/examples/boxes-370.jpg 370w, ./images/examples/boxes-450.jpg 450w, ./images/examples/boxes-708.jpg 708w, ./images/examples/boxes-740.jpg 740w, ./images/examples/boxes-900.jpg 900w"
@@ -187,7 +187,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item web-sites">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/monitor-354.jpg 354w, ./images/examples/monitor-370.jpg 370w, ./images/examples/monitor-450.jpg 450w, ./images/examples/monitor-708.jpg 708w, ./images/examples/monitor-740.jpg 740w, ./images/examples/monitor-900.jpg 900w"
@@ -207,7 +207,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item design">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/open-book-354.jpg 354w, ./images/examples/open-book-370.jpg 370w, ./images/examples/open-book-450.jpg 450w, ./images/examples/open-book-708.jpg 708w, ./images/examples/open-book-740.jpg 740w, ./images/examples/open-book-900.jpg 900w"
@@ -227,7 +227,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item marketing">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/label-354.jpg 354w, ./images/examples/label-370.jpg 370w, ./images/examples/label-450.jpg 450w, ./images/examples/label-708.jpg 708w, ./images/examples/label-740.jpg 740w, ./images/examples/label-900.jpg 900w"
@@ -247,7 +247,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="examples__item">
+                    <li class="examples__item apps">
                         <a href="#" class="examples__link">
                             <div class="project">
                                 <img srcset="./images/examples/hands-on-laptop-354.jpg 354w, ./images/examples/hands-on-laptop-370.jpg 370w, ./images/examples/hands-on-laptop-450.jpg 450w, ./images/examples/hands-on-laptop-708.jpg 708w, ./images/examples/hands-on-laptop-740.jpg 740w, ./images/examples/hands-on-laptop-900.jpg 900w"
@@ -391,6 +391,8 @@
     <script src="./js/mobile-menu.js"></script>
 
     <script src="./js/scroll-to-contacts.js"></script>
+
+    <script src="./js/filter-examples.js"></script>
 
 </body>
 
