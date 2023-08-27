@@ -53,7 +53,7 @@
                 </li>
             </ul>
 
-            <button class="button-menu js-open-menu" type="button">
+            <button class="button-menu js-open-menu" type="button" aria-label="Mobile menu open button">
                 <svg width="40" height="40" class="button-menu__icon">
                     <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -68,19 +68,22 @@
                 <!-- Фільтри -->
                 <ul class="filters">
                     <li class="filters__item" data-filter="all">
-                        <button type="button" class="filters__button">Усі</button>
+                        <button type="button" class="filters__button" aria-label="All filter button">Усі</button>
                     </li>
                     <li class="filters__item" data-filter="web-sites">
-                        <button type="button" class="filters__button">Веб-сайти</button>
+                        <button type="button" class="filters__button"
+                            aria-label="Website filter button">Веб-сайти</button>
                     </li>
                     <li class="filters__item" data-filter="apps">
-                        <button type="button" class="filters__button">Додатки</button>
+                        <button type="button" class="filters__button"
+                            aria-label="Application filter button">Додатки</button>
                     </li>
                     <li class="filters__item" data-filter="design">
-                        <button type="button" class="filters__button">Дизайн</button>
+                        <button type="button" class="filters__button" aria-label="Filter button design">Дизайн</button>
                     </li>
                     <li class="filters__item" data-filter="marketing">
-                        <button type="button" class="filters__button">Маркетинг</button>
+                        <button type="button" class="filters__button"
+                            aria-label="Marketing filter button">Маркетинг</button>
                     </li>
                 </ul>
                 <!-- Секція приклади наших робіт -->
@@ -333,7 +336,7 @@
                 <p class="footer-form__text">Підпишіться на розсилку</p>
                 <div class="footer-form__box">
                     <input class="footer-form__input" type="email" name="email-footer" placeholder="E-mail" />
-                    <button class="footer-form__button" type="submit">
+                    <button class="footer-form__button" type="submit" aria-label="Newsletter subscribe button">
                         Підписатися<svg class="button__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -345,7 +348,7 @@
 
     <!-- Мобільне меню -->
     <div class="mobile-menu js-menu-container">
-        <button class="button-menu-close js-close-menu" type="button">
+        <button class="button-menu-close js-close-menu" type="button" aria-label="Mobile menu close button">
             <svg width="40" height="40" class="button-menu-close__icon">
                 <use href="./images/icons.svg#icon-close-menu"></use>
             </svg>
